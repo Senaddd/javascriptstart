@@ -3,6 +3,10 @@ body {
   font-family: "Roboto",sans-serif;
 }
 
+textarea{
+  resize: none;
+}
+
 h1{
   text-align: center;
   color: white;

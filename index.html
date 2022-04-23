@@ -24,15 +24,21 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required placeholder="Max Schawrz" />
             </li>
             <li>
               <label for="email">Your email adress</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input type="email" name="user-email" id="useremail" required />
             </li>
             <li>
               <label for="userpassword">Your password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="7"
+              />
             </li>
           </ul>
         </section>
@@ -42,11 +48,26 @@
           <ul>
             <li>
               <label for="userage">Your age</label>
-              <input type="number" step="1" name="user-age" id="userage" />
+              <input
+                type="number"
+                step="1"
+                name="user-age"
+                id="userage"
+                require
+                min="18"
+                max="100"
+              />
             </li>
             <li>
               <label for="birthdate">Your birthdate</label>
-              <input type="date" id="birthdate" name="user-birthdate" />
+              <input
+                type="date"
+                id="birthdate"
+                name="user-birthdate"
+                required
+                min="1921-01-01"
+                max="2003-01-01"
+              />
             </li>
             <li>
               <label for="favourite-color">Your favourite color?</label>
@@ -71,23 +92,36 @@
         <section>
           <h2>How should we verify your account</h2>
           <ul>
-              <li class="form-control-inline">
-                <input
-                  type="radio"
-                  name="verify"
-                  id="verify-text-message"
-                  value="text-message"
-                />
-                <label for="veriy-text-message">Via text message (SMS)</label>
-              </li>
-              <li class="form-control-inline">
-                <input type="radio" name="verify" id="verify-phone" value="phone" />
-                <label for="">Via phone call </label>
-              </div>
-              <li class="form-control-inline">
-                <input type="radio" name="verify" id="verify-email" value="email" />
-                <label for="">Via an email</label>
-              </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-message"
+                value="text-message"
+                required
+              />
+              <label for="veriy-text-message">Via text message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+                required
+              />
+              <label for="">Via phone call </label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+                required
+              />
+              <label for="">Via an email</label>
+            </li>
           </ul>
         </section>
         <section>
@@ -113,18 +147,17 @@
             </li>
           </ul>
         </section>
-        <hr>
+        <hr />
         <section>
           <div class="form-control-inline">
-            <input type="checkbox" id="agree-terms" name="terms">
+            <input type="checkbox" id="agree-terms" name="terms" />
             <label for="agree-terms">Agree to terms?</label>
           </div>
         </section>
-        
-        <section>
-          <button>Submit</button>
-        </section>
 
+        <section>
+          <button type="submit">Submit</button>
+        </section>
       </form>
     </main>
   </body>
