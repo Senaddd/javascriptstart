@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project practice/style.css">
+    <title>Html Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Contact us</h1>
+    </header>
+    <main>
+        <form action="/user-data" method="GET">
+            <h2>How can we help you?</h2>
+            <label for="username"> Your Name</label>
+            <input type="text" name="user-name" id="username">
+            <label for="email"> Your e-mail adress</label>
+            <input type="email" name="user-email" id="useremail">
+            <label for="number"></label>
+            <label for="phonenumber">Your Phone Number</label>
+            <input type="number" name="user-number" id="phonenumber">
+            <label for="usermessage">Your message</label>
+            <textarea
+              name="user-message"
+              id="usermessage"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <label for="findingus">How did you find us?</label>
+            <select name="find" id="find">
+                <option value="Web Search">Web Search</option>
+                <option value="Web Search">Web Search</option>
+                <option value="Web Search">Web Search</option>
+            </select>
+            <h2>How should we reply?</h2>
+            <div class="inline-boxes">
+                <input type="radio" name="user-reply" id="reply" value="text-message">
+                <label for="reply"> Call me</label>
+            </div>
+
+    </main>
+</body>
+</html>
